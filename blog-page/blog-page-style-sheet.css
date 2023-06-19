@@ -1,0 +1,197 @@
+
+/* started layout for desktop, mobile later
+*/
+
+:root {
+    --orange-peel:#FF9F1C;
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+body    {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width: 100vw;
+}
+.header  {
+    display: flex;
+    width: 100vw;
+    height: 520px;
+    background-image: url(https://images.unsplash.com/photo-1625301840055-7c1b7198cfc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.nav    {
+    display: flex;
+    flex-direction: row;
+}
+.logo   {
+    display: flex;
+    justify-self: flex-start;
+    position: relative;
+    left: 20px;
+}
+.navigation {
+    display: flex;
+    width: 550px;
+    justify-self: flex-end;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    left: 850px;
+    color: var(--orange-peel);
+    font-weight: bolder;
+}
+.outer-box  {
+    width: 100vw;
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+.what-info  {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.why-info  {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.when-info  {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.recycling-info {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.choose-us-info {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.second-hand-info   {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer  {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #FF9F1C;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+.what-info:hover   {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.why-info:hover   {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.when-info:hover   {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.recycling-info:hover   {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.choose-us-info:hover   {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.second-hand-info:hover   {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .nav    {
+        width: 100%;
+        height: 100px;
+        background-color: #FF9F1C;
+        color: white;
+    }
+    .logo   {
+        width: 200px;
+        height: 100px;
+    }
+    .header {
+        background-image: url(https://images.unsplash.com/photo-1586366461834-d2d65d725a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+        font-size: large;
+        width: 100%;
+        height: 200px;
+    }
+    .outer-box  {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        box-sizing: content-box;
+        height: 100px;
+        width: 100%;
+        
+    }
+}
