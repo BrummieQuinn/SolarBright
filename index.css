@@ -1,0 +1,57 @@
+* {
+    outline: 1px solid var(--hunyadi-orange); 
+}
+:root {
+    --orange-peel:#FF9F1C;
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+
+html { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80vw;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--orange-peel);
+
+    
+    
+}
+
+nav,
+.socialmedia {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.navmenu {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.testimonials {
+    background-color: var(--mint-green)
+}
+
+h3 {
+    color: var(--light-sea-green);
+}
