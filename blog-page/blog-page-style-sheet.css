@@ -12,6 +12,56 @@ body    {
     font-family: 'Be Vietnam Pro', sans-serif;
     width: 100vw;
 }
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background-color: var(--mint-green);
+   
+}
+.logo {
+    padding-left: 1rem;
+}
+.logo img {
+    width: 15rem ;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+    margin-left: auto;
+    padding-right: 1rem;
+
+}
+.nav-links li {
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.nav-links a {
+    color: var(--orange-peel);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.nav-links li:hover {
+    transform: translateY(-3px);
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color:var(--orange-peel);
+    margin:5px;
+}
+
+.burger {
+    display:none;
+}
 .header  {
     display: flex;
     width: 100vw;
@@ -23,27 +73,6 @@ body    {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-}
-.nav    {
-    display: flex;
-    flex-direction: row;
-}
-.logo   {
-    display: flex;
-    justify-self: flex-start;
-    position: relative;
-    left: 20px;
-}
-.navigation {
-    display: flex;
-    width: 550px;
-    justify-self: flex-end;
-    flex-direction: row;
-    gap: 20px;
-    position: relative;
-    left: 850px;
-    color: var(--orange-peel);
-    font-weight: bolder;
 }
 .outer-box  {
     width: 100vw;
@@ -115,6 +144,10 @@ button  {
     background-color: #FF9F1C;
     color: white;
 }
+button:hover    {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 footer  {
     display: flex;
     width: 100%;
@@ -125,16 +158,16 @@ footer  {
     align-items: center;
 }
 .what-info:hover   {
-    cursor: pointer;
     transform: scale(1.1);
 }
 .recycling-info:hover   {
-    cursor: pointer;
     transform: scale(1.1);
 }
 .second-hand-info:hover   {
-    cursor: pointer;
     transform: scale(1.1);
+}
+a:hover {
+    cursor: pointer;
 }
 
 
@@ -165,4 +198,66 @@ footer  {
         width: 100%;
         
     }
+}
+@media screen and (max-width:1024px){
+    .nav-links {
+        width:60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position:absolute;
+        right: 0px;
+        height: 89vh;
+        top:11vh;
+        background-color: var(--light-sea-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li {
+        opacity:0;
+    }
+    .nav-links a {
+        color: white;
+    }
+    .burger {
+        display: block;
+    }
+   
+}
+.nav_active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
 }
