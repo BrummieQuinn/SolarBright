@@ -191,8 +191,24 @@ a:hover {
     .img    {
         display: none;
     }
+    .what-info  {
+        width: 450px;
+        height: 250px;
+    }
+    .recycling-info {
+        width: 450px;
+        height: 250px;
+    }
+    .second-hand-info   {
+        width: 450px;
+        height: 250px;
+    }
     .footer {
         display: none;
+    }
+    .form   {
+        padding: none;
+        width: 400px;
     }
 }
 @media screen and (max-width:1024px){
