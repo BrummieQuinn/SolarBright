@@ -151,6 +151,7 @@ button:hover    {
 footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     background-color: var(--mint-green);
     color: var(--orange-peel);
