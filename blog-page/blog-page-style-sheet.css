@@ -173,16 +173,6 @@ a:hover {
 
 
 @media screen and (max-width: 576px) {
-    .nav    {
-        width: 100%;
-        height: 100px;
-        background-color: #FF9F1C;
-        color: white;
-    }
-    .logo   {
-        width: 200px;
-        height: 100px;
-    }
     .header {
         background-image: url(https://images.unsplash.com/photo-1586366461834-d2d65d725a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
         font-size: large;
@@ -197,6 +187,12 @@ a:hover {
         height: 100px;
         width: 100%;
         
+    }
+    .img    {
+        display: none;
+    }
+    .footer {
+        display: none;
     }
 }
 @media screen and (max-width:1024px){
