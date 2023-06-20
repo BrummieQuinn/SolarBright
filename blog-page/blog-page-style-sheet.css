@@ -11,6 +11,7 @@
 body    {
     font-family: 'Be Vietnam Pro', sans-serif;
     width: 100vw;
+    height: 100vh;
 }
 nav{
     display:flex;
@@ -76,7 +77,6 @@ nav{
 }
 .outer-box  {
     width: 100vw;
-    height: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -190,6 +190,9 @@ a:hover {
 
 
 @media screen and (max-width: 576px) {
+    body    {
+        overflow: auto;
+    }
     .header {
         background-image: url(https://images.unsplash.com/photo-1586366461834-d2d65d725a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
         font-size: large;
@@ -201,7 +204,6 @@ a:hover {
         flex-direction: row;
         gap: 20px;
         box-sizing: content-box;
-        height: 100px;
         width: 100%;
         
     }
@@ -220,12 +222,16 @@ a:hover {
         width: 450px;
         height: 250px;
     }
-    .footer {
-        display: none;
-    }
     .form   {
         padding: none;
         width: 400px;
+    }
+    .social-media   {
+        width: 20%;
+    }
+    .contact-info   {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width:1024px){
@@ -260,6 +266,9 @@ a:hover {
     }
     .burger {
         display: block;
+    }
+    .img    {
+        display: none;
     }
    
 }
