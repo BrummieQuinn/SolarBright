@@ -1,3 +1,5 @@
+/* this is desktop first */
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -16,11 +18,25 @@ footer {
 .social-media {
     display:flex;
     justify-content: space-around;
-    width: 50%;
+    width: 40%;
 }
 .social-media li {
     list-style: none;
 }
 .social-media a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+.form   {
+    padding: none;
+    width: 400px;
+}
+.social-media   {
+    width: 20%;
+}
+.contact-info   {
+    display: flex;
+    flex-direction: column;
+}
 }
