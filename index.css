@@ -1,6 +1,4 @@
-* {
-    outline: 1px solid var(--hunyadi-orange); 
-}
+
 :root {
     --orange-peel:#FF9F1C;
     --hunyadi-orange:#FFBF69;
@@ -29,11 +27,14 @@ body {
 }
 
 nav {
+    grid-area: 1 / 1 / 2 / 2;
     display:flex;
     justify-content: space-around;
     align-items: center;
     min-height: 12vh;
     background-color: var(--mint-green);
+    z-index: 1;
+   
    
 }
 .logo {
@@ -121,8 +122,8 @@ h3 {
 }
 
 h2 img {
-    max-width: 100%;
-    max-height: 100%;
+   width: 80%;
+   height: 80%;
 }
 
 main {
@@ -131,8 +132,10 @@ main {
 
 .reviews {
     position: relative;
-    bottom: 25rem;
+    bottom: 34rem;
+   
     background-color: var(--mint-green);
+    z-index: 0;
 }
 
 .quotes {
@@ -140,12 +143,17 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
+
 }
 
 .quoteinput {
     display: flex;
     flex-flow: column wrap;
-    width:max-content;
+    width: 50%;
+
+
+    border-radius: 10px;
+    border: 1px solid var(--light-sea-green);
 }
 
 .btn-submit {
@@ -156,6 +164,13 @@ main {
 button { 
     background-color:var(--light-sea-green);
     color: var(--mint-green);
+    border: none;
+}
+
+.offices {
+    grid-row: 6 / 7;
+    margin: 0;
+    width: 100%;
 }
 
 .address {
@@ -172,13 +187,13 @@ h3 {
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width: 650px){
     body {
         overflow-x: hidden;
     }
     .nav-links {
         position:absolute;
-        right: 0px;
+        right: -90px;
         height: 89vh;
         top:11vh;
         background-color: var(--light-sea-green);
