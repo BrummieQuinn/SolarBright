@@ -6,7 +6,7 @@
     font-color: black;
 }
 body {
-    height: 400vh;
+    height: 100%;
 }
 
 :root {
@@ -16,34 +16,56 @@ body {
     --light-sea-green:#2EC4B6;
 }
 
-.hero-services  h1 {
-    font-size: 3rem;
-    
-}
+
 
 .hero-services {
-
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display:flex;
-    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
     justify-content: center;
-    flex-direction: column;
-    color:white;
-}
-.background-image-house {
-    background-image: linear-gradient(rgba(93, 83, 83, 0.5), rgba(13, 12, 12, 0.5)),url(../images/roof-solar-panels.jpg);
-}
+    align-items: center;
+    z-index: 0;
 
+}
+.hero-services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/roof-solar-panels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+.hero-services-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+.hero-services-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-services-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
 .home-services {
-   height:10%;
+    height:10%;
     background-color: var(--mint-green);
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 3rem 0;
+
    
 }
 .home-services p {
@@ -51,17 +73,97 @@ body {
     text-align: center;
 }
 
-
 .solar-works {
-    background-color: red;;
-    height: 15%;
+    height: 30%;
     display:flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-  
+    margin: 3rem 0;
+
 }
 .solar-works p {
     width: 80%;
+    text-align: center; 
+}
+
+.house-solar-image{
+    margin: 2rem 0;
+}
+
+.further-benefits {
+    width:100%;
+    margin: 3rem 0;
+    background-color: var(--mint-green);
+    padding: 3rem 0;
+}
+
+.further-benefits-inner {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.further-benefits-inner p {
+    width: 80%;
     text-align: center;
+}
+
+.services-gallery  {
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.solar-panals-services-image {
+    display:flex;
+   justify-content: center;
+    
+}
+.solar-panals-services-image img{
+    width:90%;
+    height:auto;
+    margin:1rem 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
+
+.services-text {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.services-text p {
+    width: 80%;
+    text-align: center; 
+}
+
+
+
+@media screen and (min-width:  869px) {
+    .services-gallery { 
+        flex-direction: row;
+    }
+    .solar-panals-services-image  {
+        width:50%;
+        height:auto;
+    }
+    .solar-panals-services-image img {
+        width:100%;
+        height:auto;
+    }
+    .services-text {
+        width: 50%;
+    }
+}
+
+/* @media screen and (max-width: 1200px) {
+  
+    .solar-panals-services-image {
+        width:100%;
+       
+       
+    } */
 }

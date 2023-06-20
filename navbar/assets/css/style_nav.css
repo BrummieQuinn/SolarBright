@@ -19,6 +19,7 @@ nav{
     align-items: center;
     min-height: 12vh;
     background-color: var(--mint-green);
+    z-index:10;
    
 }
 .logo {
@@ -34,6 +35,7 @@ nav{
     width:40%;
     margin-left: auto;
     padding-right: 1rem;
+    z-index: 10;
 
 }
 .nav-links li {
