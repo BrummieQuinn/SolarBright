@@ -18,43 +18,36 @@
     <header>
    
         <nav>
-   
-            <img class="logo" 
-                 src="assets/Solar Bright.svg" 
-                 alt="Solar Bright logo">
-            <ul class="navmenu">
-                
+            <div class="logo">
+                <img src="assets/css/logo/Solar_Bright_mint_green.svg" alt="">
+            </div>
+            <ul class="nav-links">
                 <li>
-                    <a href="#">
-                        Services
-                    </a>
+                    <a href="#">Home</a>
                 </li>
-                
                 <li>
-                    <a href="#">
-                        About Us
-                    </a>
+                    <a href="#">About</a>
                 </li>
-                
                 <li>
-                    <a href="#">
-                        Blog
-                    </a>
+                    <a href="#">Contact</a>
                 </li>
-                
                 <li>
-                    <a href="#">
-                        Refer-A-Friend
-                    </a>
+                    <a href="#">Blog</a>
                 </li>
-            
+                <li>
+                    <a href="#">Services</a>
+                </li>
             </ul>
-        
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     
     </header>
     
-    <h1>
+    <h1 class="title">
         Welcome to Solar Bright
     </h1>
     
@@ -81,15 +74,15 @@
 
         <form class="quotes">
             
-            <fieldset>
+            <fieldset class="quoteinput">
                 
                 <legend>Get Your Quote</legend>
                
                 <label for="name">Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required aria-required="true">
 
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required aria-required="true">
 
                 <label for="postcode">Postcode</label>
                 <input type="text" id="postcode">
@@ -97,17 +90,26 @@
                 <label for="phone">Contact Number</label>
                 <input type="number" id="phone">
 
+                <label for="mailing">Please indicate if you would like to join our mailing list</label>
+                <select id="mailing">
+                    <option value="yes">Yes, please sign me up</option>
+                    <option value="no">No, I would not like to receive future offers or marketing</option>
+                </select>                    
                 <div class="btn-submit">
                     
                     <button type="submit">Submit</button>
                 
                 </div>
 
+                
+
+
             </fieldset>
         </form>
     </main>
     
     <footer>
+        <img src="assets/offices.jpg" alt="outside of solar bright building">
         
         <h3>Come and visit</h3>
         
@@ -121,7 +123,7 @@
         
         <h3>Follow Us</h3>
        
-        <ul role="social media menu"class="socialmedia">
+        <ul aria-roledescription="social media menu"class="socialmedia">
             <li>
                 <a href="#">
                     <img src="assets/f_logo_RGB-Blue_58.png" 
@@ -146,8 +148,7 @@
             </ul>
     
         </footer>
-    
-        <script src="index.js">
+        <script src="assets/js/nav.js">
 
         </script>
 

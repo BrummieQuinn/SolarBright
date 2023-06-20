@@ -1,31 +1,16 @@
-* {
-    outline: 1px solid var(--hunyadi-orange); 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-color: black;
 }
+
 :root {
-    --orange-peel:#FF9F1C;
+    --orange-peel:#fa9405;
     --hunyadi-orange:#FFBF69;
     --mint-green:#CBF3F0;
     --light-sea-green:#2EC4B6;
-}
-#foo {
-    color: var(--main-color);
-}
-
-html { 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    width: 100vw;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 16px;
-    color: var(--orange-peel);
-    align-content: center;
 }
 
 nav {
@@ -36,9 +21,11 @@ nav {
     background-color: var(--mint-green);
    
 }
+
 .logo {
     padding-left: 1rem;
 }
+
 .logo img {
     width: 15rem ;
 }
@@ -78,93 +65,6 @@ nav {
 .burger {
     display:none;
 }
-.socialmedia {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: stretch;
-
-}
-
-
-ul.socialmedia {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    align-content: center;
-    justify-content: space-evenly;
-
-    margin-right: 100px;
-    padding: 0;
-}
-
-
-a {
-    color: var(--orange-peel);
-}
-
-
-h2,
-h3 {
-    text-align: center;
-}
-
-.title {
-
-    padding-right: 1rem;
-
-    text-align: center;
-}
-
-.heroimage {
-    width: 100%;
-}
-
-h2 img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-main {
-    grid-row: 4 / 6;
-}
-
-.reviews {
-    position: relative;
-    bottom: 25rem;
-    background-color: var(--mint-green);
-}
-
-.quotes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-}
-
-.quoteinput {
-    display: flex;
-    flex-flow: column wrap;
-    width:max-content;
-}
-
-.btn-submit {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-button { 
-    background-color:var(--light-sea-green);
-    color: var(--mint-green);
-}
-
-.address {
-    text-align: center;
-}
-
-h3 {
-    color: var(--light-sea-green);
-}
 
 @media screen and (max-width:1024px){
     .nav-links {
@@ -172,7 +72,7 @@ h3 {
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:768px){
     body {
         overflow-x: hidden;
     }
