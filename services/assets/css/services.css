@@ -96,6 +96,13 @@ body {
     background-color: var(--mint-green);
     padding: 3rem 0;
 }
+.further-benefits2 {
+    width:100%;
+    margin: 3rem 0;
+    background-color: var(--light-sea-green);
+    padding: 3rem 0;
+}
+
 
 .further-benefits-inner {
     display:flex;
@@ -159,11 +166,3 @@ body {
     }
 }
 
-/* @media screen and (max-width: 1200px) {
-  
-    .solar-panals-services-image {
-        width:100%;
-       
-       
-    } */
-}
