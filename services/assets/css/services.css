@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-color: black;
+}
+body {
+    height: 400vh;
+}
+
+:root {
+    --orange-peel:#FF9F1C;
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+
+.hero-services  h1 {
+    font-size: 3rem;
+    
+}
+
+.hero-services {
+
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+.background-image-house {
+    background-image: linear-gradient(rgba(93, 83, 83, 0.5), rgba(13, 12, 12, 0.5)),url(../images/roof-solar-panels.jpg);
+}
+
+.home-services {
+   height:10%;
+    background-color: var(--mint-green);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.home-services p {
+    width: 80%;
+    text-align: center;
+}
+
+
+.solar-works {
+    background-color: red;;
+    height: 15%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.solar-works p {
+    width: 80%;
+    text-align: center;
+}
