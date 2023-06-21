@@ -19,11 +19,12 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    align-content: center;
     width: 100vw;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 16px;
     color: var(--orange-peel);
-    align-content: center;
+    
 }
 
 nav {
@@ -33,7 +34,7 @@ nav {
     align-items: center;
     min-height: 12vh;
     background-color: var(--mint-green);
-    z-index: 1;
+    
    
    
 }
@@ -79,26 +80,6 @@ nav {
 .burger {
     display:none;
 }
-.socialmedia {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: stretch;
-
-}
-
-
-ul.socialmedia {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    align-content: center;
-    justify-content: space-evenly;
-
-    margin-right: 100px;
-    padding: 0;
-}
-
 
 a {
     color: var(--orange-peel);
@@ -108,13 +89,16 @@ a {
 h2,
 h3 {
     text-align: center;
+    
 }
 
 .title {
-
+    margin-right: 1rem;
     padding-right: 1rem;
-
+    font-size: 50px;
     text-align: center;
+    word-wrap: break-word;
+
 }
 
 .heroimage {
@@ -122,20 +106,31 @@ h3 {
 }
 
 h2 img {
-   width: 80%;
-   height: 80%;
+   width: 30%;
+   height: 50%;
+   margin: 0;
+   padding: 0;
+   
 }
 
 main {
     grid-row: 4 / 6;
 }
 
+h2 :not(h2.reviews) {
+    font-size: 40px;
+}
+
 .reviews {
     position: relative;
-    bottom: 34rem;
-   
-    background-color: var(--mint-green);
-    z-index: 0;
+    top: 20rem;
+    left: 0rem;
+    bottom: 4rem; 
+    
+    rotate: -15deg;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .quotes {
@@ -156,6 +151,15 @@ main {
     border: 1px solid var(--light-sea-green);
 }
 
+    input
+    option {
+        border-radius: 4px;
+        
+}
+    option {
+        font-size: 20px;
+    }
+
 .btn-submit {
     display: flex;
     flex-flow: column wrap;
@@ -165,7 +169,11 @@ button {
     background-color:var(--light-sea-green);
     color: var(--mint-green);
     border: none;
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 10px;
 }
+
 
 .offices {
     grid-row: 6 / 7;
@@ -175,12 +183,27 @@ button {
 
 .address {
     text-align: center;
+    font-size: 30px;
 }
 
 h3 {
+    font-size: 40px;
     color: var(--light-sea-green);
 }
+@media screen and (max-width:1024px){
+    
+    .reviews {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        rotate: 0deg;
+        
+    }
 
+    
+    
+    
+}
 @media screen and (max-width:1024px){
     .nav-links {
         width:60%;
