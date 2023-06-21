@@ -27,6 +27,12 @@ body {
     
 }
 
+header {
+    display: grid;
+    position: relative;
+    z-index: 1;
+}
+
 nav {
     grid-area: 1 / 1 / 2 / 2;
     display:flex;
@@ -36,8 +42,10 @@ nav {
     background-color: var(--mint-green);
     
    
-   
 }
+
+
+
 .logo {
     padding-left: 1rem;
 }
@@ -134,7 +142,12 @@ h2 :not(h2.reviews) {
     
 }
 
-
+.quotestitle {
+    display: grid;
+    position: relative;
+    z-index: 0;
+    
+}
 .quotes {
     display: grid;
     grid-template-columns: 1fr;
