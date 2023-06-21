@@ -127,12 +127,13 @@ h2 :not(h2.reviews) {
     background-color: var(--mint-green);
     position: absolute;
     width: 100%;
-    height:30%;
+    height:20%;
     top: 30rem;
     
    
     
 }
+
 
 .quotes {
     display: grid;
@@ -191,6 +192,24 @@ h3 {
     font-size: 40px;
     color: var(--light-sea-green);
 }
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mint-green);
+    color: var(--orange-peel);
+}
+
+footer li {
+    list-style: none;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+}
+
 
 @media screen and (max-width:1020px){
     body{ 
