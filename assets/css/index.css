@@ -114,6 +114,7 @@ h2 img {
 }
 
 main {
+    position: relative;
     grid-row: 4 / 6;
 }
 
@@ -121,15 +122,15 @@ h2 :not(h2.reviews) {
     font-size: 40px;
 }
 
+
 .reviews {
-    position: relative;
-    top: 20rem;
-    left: 0rem;
-    bottom: 4rem; 
+    background-color: var(--mint-green);
+    position: absolute;
+    width: 100%;
+    height:30%;
+    top: 30rem;
     
-    rotate: -15deg;
-    margin: 0;
-    padding: 0;
+   
     
 }
 
@@ -190,29 +191,25 @@ h3 {
     font-size: 40px;
     color: var(--light-sea-green);
 }
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:1020px){
+    body{ 
+        width: 100vw;
+    }
     
-    .reviews {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        rotate: 0deg;
-        
+    .nav-links {
+        width:60%;
     }
 
     
     
-    
-}
-@media screen and (max-width:1024px){
-    .nav-links {
-        width:60%;
-    }
 }
 
 @media screen and (max-width: 650px){
     body {
         overflow-x: hidden;
+        width: 100vw;
+       
     }
     .nav-links {
         position:absolute;
@@ -265,4 +262,12 @@ h3 {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.quotes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+
 }
