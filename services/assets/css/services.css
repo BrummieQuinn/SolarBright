@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body {
+    height: 100%;
+}  
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
+h1 span {
+    color:#FF9F1C
+}
+:root {
+    --orange-peel:#FF9F1C;
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+.hero-services {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+}
+.hero-services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/roof-solar-panels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+.hero-services-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+.hero-services-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-services-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+.home-services {
+    background-color: var(--mint-green);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+    -moz-box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+    box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);  
+}
+.home-services p {
+    width: 80%;
+    text-align: center;
+}
+
+.solar-works {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+.solar-works p {
+    width: 80%;
+    text-align: center; 
+}
+
+.house-solar-image {
+    margin: 2rem 0;
+}
+.further-benefits {
+    width:100%;
+    margin: 3rem 0;
+    background-color: var(--mint-green);
+    padding: 3rem 0;
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+    -moz-box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+    box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+}
+.start-your-journey {
+    width:100%;
+    margin: 3rem 0;
+    background-color: var(--light-sea-green);
+    padding: 3rem 0;
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+    -moz-box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+    box-shadow: 0px 4px 6px 1px rgba(46,196,182,0.35);
+}
+.further-benefits-inner {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.further-benefits-inner p {
+    width: 80%;
+    text-align: center;
+}
+.services-gallery  {
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.solar-panals-services-image {
+    display:flex;
+   justify-content: center;    
+}
+.solar-panals-services-image img{
+    width:90%;
+    height:auto;
+    margin:1rem 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
+
+.services-text {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.services-text p {
+    width: 80%;
+    text-align: center; 
+}
+
+.flip {
+    flex-direction: column-reverse;
+}
+
+.pop {
+    transition: transform 0.2s ease;
+}
+.pop:hover {
+    transform: scale(1.02);
+}
+
+@media screen and (min-width:  869px) {
+    .services-gallery { 
+        flex-direction: row;
+    }
+    .solar-panals-services-image  {
+        width:50%;
+        height:auto;
+        margin: 0 2rem;
+    }
+    .solar-panals-services-image img {
+        width:100%;
+        height:auto;
+    }
+    .services-text {
+        width: 60%;
+    }
+}
+

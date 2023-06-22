@@ -1,0 +1,43 @@
+/* this is desktop first */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mint-green);
+    color: var(--orange-peel);
+    font-weight: bolder;
+}
+.contact-info   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+    width: 40%;
+}
+.social-media {
+    display:flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.social-media li {
+    list-style: none;
+}
+.social-media a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+.form   {
+    padding: none;
+    width: 400px;
+}
+.social-media   {
+    width: 20%;
+}
+.contact-info   {
+    display: flex;
+    flex-direction: column;
+}
+}
