@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/style_nav.css">
+    <link rel="stylesheet" type="text/css" href="style-contact.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Be+Vietnam+Pro">
+    <script type="module" src="./contact-us.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Contact Us - Solar Bright</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/logo/Solar_Bright_mint_green.svg" alt="">
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="get-in-touch-container">
+            <div class="get-in-touch-container-text">
+                <h2>Get in touch with us</h2>
+                <p>Contact our specialists and we will respond to you within 24-48 hours.</p>
+            </div>
+            <form>
+                <div class="get-in-touch-container-input-left">
+                    <input type="text" class="firstname" name="firstname" placeholder="First Name:" required>
+                    <input type="text" class="lastname" name="lastname" placeholder="Last Name:" required>
+                    <input type="email" class="email" name="email" placeholder="Email:" required>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Phone Number:" required>
+                    <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+                </div>
+                <div class="get-in-touch-container-input-right">
+                    <textarea class="subject" name="subject" placeholder="Your message..." required></textarea>
+                    <input type="submit" class="button-submit" value="Send">
+                </div>
+            </form>
+        </section>
+        <section class="head-office-container">
+            <section class="contacts-container">
+                <div>
+                    <h2>Head Office</h2>
+                    <p>
+                        Solar Bright<br />
+                    276 Bramley Ave<br />
+                    Leeds, West Yorkshire<br />
+                    UK
+                    </p>
+                </div>
+                <div>
+                    <h3>Contact details:</h3>
+                    <p class="phone-container">
+                        Phone: <a href="tel:">0000000000</a>
+                    </p>
+                    <p>
+                        E-mail: <a href="mailto:solarbright@gmail.com">solarbright@gmail.com</a>
+                    </p>
+                </div>
+                <h3>Office Hours</h3>
+                <p>
+                    Monday-Thursday:&nbsp;<span class="office-hours">09:30 - 18:30</span>
+                    <br> Friday: <span class="office-hours">09:30 - 16:00</span>
+                </p>
+            </section>
+            <div class="map-container">
+                <h3>Our office location</h3>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <div class="phone-number">&#9742 07578919977</div>
+            <div class="email-address">&#128231 info@loremipsum.com</div>
+        </div>
+
+        <ul class="social-media">
+            <li>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            </li>
+        </ul> 
+    </footer>
+</body>
+</html>
