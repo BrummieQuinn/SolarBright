@@ -1,0 +1,143 @@
+
+
+
+
+:root {
+    --orange-peel:#FF9F1C;
+    
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+
+#foo {
+    color: var(--main-color);
+}
+
+.header-main{
+position: fixed;
+width: 100%;
+height: 180px;
+justify-content: space-between;
+display: flex;
+
+}
+.header-main-logo{
+   width: fit-content;
+}
+
+.container{
+    display: flex;
+    background-color:#FF9F1C;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+    
+
+.container p {
+    text-align:start;
+    padding: 10%;
+}
+/*gina helped*/
+img[src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c29sYXIlMjBwYW5lbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"],
+img[src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNvbGFyJTIwcGFuZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"]
+{
+display: flex;
+flex-flow: row wrap;
+width: 50%;
+}
+
+
+
+
+p{
+    font-weight: 600;
+    font-style: initial;
+    font-size: large;
+}
+
+.ull{
+    background-color: #2EC4B6;
+ list-style: none outside url(../SolarBright/services/assets/images/renew.png);
+}
+.icon li{
+    background-image: url(../SolarBright/services/assets/images/renew.png);
+background-repeat: no-repeat;
+background-image: 0 2px;
+}
+
+.icon{
+    list-style: url(../SolarBright/services/assets/images/renew.png);
+}
+
+.renew{
+text-align:right;
+border-radius: 50%;
+}
+
+/*img{
+    width: 27%;
+    height: 80%;
+}
+
+
+
+
+/**<!--  footer{ -->
+    height: 20vh;
+    border-image: 10%;
+}
+  -->**/
+footer img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.work{
+    height: 20%;
+    width: 25%;
+}
+/* this is desktop first */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mint-green);
+    color: var(--orange-peel);
+    font-weight: bolder;
+}
+.contact-info   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+    width: 40%;
+}
+.social-media {
+    display:flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.social-media li {
+    list-style: none;
+}
+.social-media a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+.form   {
+    padding: none;
+    width: 400px;
+}
+.social-media   {
+    width: 20%;
+}
+.contact-info   {
+    display: flex;
+    flex-direction: column;
+}
+}
