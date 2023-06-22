@@ -11,7 +11,7 @@ html,
 body {
     font-family: 'BeVietnamPro', sans-serif;
     font-size: 1rem;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -63,24 +63,31 @@ input {
     width: 100%;
     min-height: 2rem;
     border-radius: 5px;
+    font-size: 1rem;
     box-sizing: border-box;
     border: none;
+    transition: font-size ease-in-out 0.2s;
 }
 input:focus {
     box-shadow: 0px 0px 10px 5px #FFBF69;
     outline: none;
+    font-size: 1.05rem;
 }
 .subject {
+    font-family: 'BeVietnamPro', sans-serif;
+    font-size: 1rem;
     min-height: 50%;
     padding: 0.5rem;
     border-radius: 5px;
     box-sizing: border-box;
     border: none;
     outline: none;
+    transition: font-size ease-in-out 0.2s;
 }
 .subject:focus {
     box-shadow: 0px 0px 10px 5px #FFBF69;
     outline: none;
+    font-size: 1.05rem;
 }
 .button-submit {
     background-color: #FFBF69;
@@ -92,7 +99,23 @@ input:focus {
     box-shadow: 3px 5px 20px -5px #FFBF69;
     cursor: pointer;
 }
+/* next section */
+.head-office-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.office-hours {
+    float: right;
+}
 .map-container {
+    align-self: flex-start;
     height: 100%;
     width: 500px;
 }
