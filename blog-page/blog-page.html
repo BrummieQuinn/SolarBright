@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
     <link rel="stylesheet" href="blog-page-style-sheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="blog-page-javascript.js"></script>
-    <style>      
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
     </style>
 </head>
+
 <body>
     <!--https://fonts.google.com/specimen/Be+Vietnam+Pro this is the font we use-->
     <!--color palette : https://coolors.co/ff9f1c-ffbf69-ffffff-cbf3f0-2ec4b6 orange for the h1 ecc-->
     <!-- Links on top and bottom including contact and phone number-->
     <nav>
         <div class="logo">
-            <img src="https://raw.githubusercontent.com/BrummieQuinn/SolarBright/12ba9946a598de59f035f6984887c776906e89c5/navbar/assets/logo/Solar_Bright_mint_green.svg" alt="">
+            <img src="https://raw.githubusercontent.com/BrummieQuinn/SolarBright/12ba9946a598de59f035f6984887c776906e89c5/navbar/assets/logo/Solar_Bright_mint_green.svg"
+                alt="">
         </div>
         <ul class="nav-links">
             <li>
-                <a href="/index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li>
                 <a href="/class.html">About</a>
@@ -33,7 +36,7 @@
                 <a href="#">Blog</a>
             </li>
             <li>
-                <a href="/services/services.html">Services</a>
+                <a href="../services/services.html">Services</a>
             </li>
         </ul>
         <div class="burger">
@@ -50,21 +53,27 @@
     <div class="outer-box">
         <div class="what-info">
             <h2>What are solar panels?</h2>
-            <img class="img" src="https://images.unsplash.com/photo-1626251376234-8bc112f0bcd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=888&q=80" alt="what are solar panels" width="300px" height="250px">
+            <img class="img"
+                src="https://images.unsplash.com/photo-1626251376234-8bc112f0bcd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=888&q=80"
+                alt="what are solar panels" width="300px" height="250px">
             <p>
                 Click <a href="fake-article.html">here</a> to read the article
             </p>
         </div>
         <div class="recycling-info">
             <h2>Solar Panels Recycling</h2>
-            <img class="img" src="https://images.unsplash.com/photo-1545209463-e2825498edbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="solarpanelsrecycling" width="300px" height="250px">
+            <img class="img"
+                src="https://images.unsplash.com/photo-1545209463-e2825498edbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                alt="solarpanelsrecycling" width="300px" height="250px">
             <p>
                 Click <a href="fake-article.html">here</a> to read the article
             </p>
         </div>
         <div class="second-hand-info">
             <h2>Are second-hand solar panels a good idea?</h2>
-            <img class="img" src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="second-hand-panels" width="300px" height="250px">
+            <img class="img"
+                src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                alt="second-hand-panels" width="300px" height="250px">
             <p>
                 Click <a href="fake-article.html">here</a> to read the article
             </p>
@@ -72,33 +81,35 @@
         <div class="send-an-article">
             <h3>Know something interesting about solar panels? Get in touch with us!</h3>
             <form class="form" onsubmit="completeForm(event)">
-                <label for="name">Your full name:</label> 
+                <label for="name">Your full name:</label>
                 <input type="text" name="name" id="name" required minlength="2" maxlength="40">
-                <label for="email">Your email address:</label> 
+                <label for="email">Your email address:</label>
                 <input type="email" name="email" id="email" required minlength="2" maxlength="40">
                 <label for="article">Your article:</label>
-                <textarea name="article" id="article" cols="30" rows="10" required minlength="5" maxlength="300"></textarea>
+                <textarea name="article" id="article" cols="30" rows="10" required minlength="5"
+                    maxlength="300"></textarea>
                 <button type="submit" onclick="submitForm()">Submit your article</button>
             </form>
         </div>
     </div>
     <footer>
-            <div class="contact-info">
-                <div class="phone-number">&#9742 07578919977</div>
-                <div class="email-address">&#128231 info@loremipsum.com</div>
-            </div>
+        <div class="contact-info">
+            <div class="phone-number">&#9742 07578919977</div>
+            <div class="email-address">&#128231 info@loremipsum.com</div>
+        </div>
 
-            <ul class="social-media">
-                <li>
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
-                </li>
-            </ul> 
+        <ul class="social-media">
+            <li>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            </li>
+        </ul>
     </footer>
 </body>
+
 </html>
