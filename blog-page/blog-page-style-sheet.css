@@ -1,0 +1,302 @@
+
+/* started layout for desktop, mobile later
+*/
+
+:root {
+    --orange-peel:#FF9F1C;
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+body    {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background-color: var(--mint-green);
+   
+}
+.logo {
+    padding-left: 1rem;
+}
+.logo img {
+    width: 15rem ;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+    margin-left: auto;
+    padding-right: 1rem;
+
+}
+.nav-links li {
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.nav-links a {
+    color: var(--orange-peel);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.nav-links li:hover {
+    transform: translateY(-3px);
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color:var(--orange-peel);
+    margin:5px;
+}
+
+.burger {
+    display:none;
+}
+.header  {
+    display: flex;
+    width: 100vw;
+    height: 520px;
+    background-image: url(https://images.unsplash.com/photo-1625301840055-7c1b7198cfc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.outer-box  {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+.what-info  {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 15%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.recycling-info {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 15%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.second-hand-info   {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 3px solid var(--hunyadi-orange);
+    border-radius: 15%;
+    padding: 10px;
+    margin: 10px 20px 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.send-an-article    {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #FFBF69;
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+form    {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+h3  {
+    padding: 25px;
+}
+button  {
+    margin-top: 20px;
+    border-radius: 5%;
+    background-color: #FF9F1C;
+    color: white;
+}
+button:hover    {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mint-green);
+    color: var(--orange-peel);
+    font-weight: bolder;
+}
+.contact-info   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+    width: 40%;
+}
+.social-media {
+    display:flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.social-media li {
+    list-style: none;
+}
+.social-media a {
+    text-decoration: none;
+}
+.what-info:hover   {
+    transform: scale(1.1);
+}
+.recycling-info:hover   {
+    transform: scale(1.1);
+}
+.second-hand-info:hover   {
+    transform: scale(1.1);
+}
+a:hover {
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    body    {
+        overflow: auto;
+    }
+    .header {
+        background-image: url(https://images.unsplash.com/photo-1586366461834-d2d65d725a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+        font-size: large;
+        width: 100%;
+        height: 200px;
+    }
+    .outer-box  {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        box-sizing: content-box;
+        width: 100%;
+        
+    }
+    .img    {
+        display: none;
+    }
+    .what-info  {
+        width: 450px;
+        height: 250px;
+    }
+    .recycling-info {
+        width: 450px;
+        height: 250px;
+    }
+    .second-hand-info   {
+        width: 450px;
+        height: 250px;
+    }
+    .form   {
+        padding: none;
+        width: 400px;
+    }
+    .social-media   {
+        width: 20%;
+    }
+    .contact-info   {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1024px){
+    .nav-links {
+        width:60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position:absolute;
+        right: 0px;
+        height: 89vh;
+        top:11vh;
+        background-color: var(--light-sea-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li {
+        opacity:0;
+    }
+    .nav-links a {
+        color: white;
+    }
+    .burger {
+        display: block;
+    }
+    .img    {
+        display: none;
+    }
+   
+}
+.nav_active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
