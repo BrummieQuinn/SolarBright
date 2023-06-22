@@ -1,0 +1,309 @@
+
+:root {
+    --orange-peel:#FF9F1C;
+    --hunyadi-orange:#FFBF69;
+    --mint-green:#CBF3F0;
+    --light-sea-green:#2EC4B6;
+}
+#foo {
+    color: var(--main-color);
+}
+
+html { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    width: 100vw;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    color: var(--orange-peel);
+    
+}
+
+header {
+    display: grid;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    grid-area: 1 / 1 / 2 / 2;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background-color: var(--mint-green);
+    
+   
+}
+
+
+
+.logo {
+    padding-left: 1rem;
+}
+.logo img {
+    width: 15rem ;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+    margin-left: auto;
+    padding-right: 1rem;
+
+}
+.nav-links li {
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.nav-links a {
+    color: var(--orange-peel);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.nav-links li:hover {
+    transform: translateY(-3px);
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color:var(--orange-peel);
+    margin:5px;
+}
+
+.burger {
+    display:none;
+}
+
+a {
+    color: var(--orange-peel);
+}
+
+
+h2,
+h3 {
+    text-align: center;
+    
+}
+
+.title {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    font-size: 50px;
+    text-align: center;
+    word-wrap: break-word;
+
+}
+
+.heroimage {
+    width: 100%;
+}
+
+h2 img {
+   width: 30%;
+   height: 50%;
+   margin: 0;
+   padding: 0;
+   
+}
+
+main {
+    position: relative;
+    grid-row: 4 / 6;
+}
+
+h2 :not(h2.reviews) {
+    font-size: 40px;
+}
+
+
+.reviews {
+    background-color: var(--mint-green);
+    position: absolute;
+    width: 100%;
+    height:20%;
+    top: 30rem;
+    
+   
+    
+}
+
+.quotestitle {
+    display: grid;
+    position: relative;
+    z-index: 0;
+    
+}
+.quotes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+
+}
+
+.quoteinput {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+
+
+    border-radius: 10px;
+    border: 1px solid var(--light-sea-green);
+}
+
+    input
+    option {
+        border-radius: 4px;
+        
+}
+    option {
+        font-size: 20px;
+    }
+
+.btn-submit {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+button { 
+    background-color:var(--light-sea-green);
+    color: var(--mint-green);
+    border: none;
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hunyadi-orange);
+}
+
+.offices {
+    grid-row: 6 / 7;
+    margin: 0;
+    width: 100%;
+}
+
+.address {
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 40px;
+    color: var(--light-sea-green);
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mint-green);
+    color: var(--orange-peel);
+}
+
+footer li {
+    list-style: none;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (max-width:1020px){
+    body{ 
+        width: 100vw;
+    }
+    
+    .nav-links {
+        width:60%;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 650px){
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+       
+    }
+    .nav-links {
+        position:absolute;
+        right: -90px;
+        height: 89vh;
+        top:11vh;
+        background-color: var(--light-sea-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li {
+        opacity:0;
+    }
+    .nav-links a {
+        color: white;
+    }
+    .burger {
+        display: block;
+    }
+   
+}
+.nav_active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.quotes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+
+}
