@@ -27,6 +27,12 @@ body {
     
 }
 
+header {
+    display: grid;
+    position: relative;
+    z-index: 1;
+}
+
 nav {
     grid-area: 1 / 1 / 2 / 2;
     display:flex;
@@ -36,8 +42,10 @@ nav {
     background-color: var(--mint-green);
     
    
-   
 }
+
+
+
 .logo {
     padding-left: 1rem;
 }
@@ -127,13 +135,19 @@ h2 :not(h2.reviews) {
     background-color: var(--mint-green);
     position: absolute;
     width: 100%;
-    height:30%;
+    height:20%;
     top: 30rem;
     
    
     
 }
 
+.quotestitle {
+    display: grid;
+    position: relative;
+    z-index: 0;
+    
+}
 .quotes {
     display: grid;
     grid-template-columns: 1fr;
@@ -173,8 +187,12 @@ button {
     height: 2rem;
     font-weight: 600;
     border-radius: 10px;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: var(--hunyadi-orange);
+}
 
 .offices {
     grid-row: 6 / 7;
@@ -191,6 +209,24 @@ h3 {
     font-size: 40px;
     color: var(--light-sea-green);
 }
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mint-green);
+    color: var(--orange-peel);
+}
+
+footer li {
+    list-style: none;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+}
+
 
 @media screen and (max-width:1020px){
     body{ 

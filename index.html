@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Georgina Carrington">
     <meta name="description" content="Solar Bright Homepage">
-    <title>Solar Bright Homepage</title>
+    <title>Welcome to Solar Bright</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&display=swap" 
@@ -23,24 +23,37 @@
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#">
+                        Home
+                    </a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">
+                        About
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#">
+                        Contact
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#">
+                        Blog
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#">
+                        Services
+                    </a>
                 </li>
             </ul>
+            
             <div class="burger">
                 <div class="line1"></div>
+                
                 <div class="line2"></div>
+                
                 <div class="line3"></div>
             </div>
         </nav>
@@ -51,30 +64,26 @@
         Welcome to Solar Bright
     </h1>
 
-    
     <img 
     class="heroimage" 
     src="assets/images/solarPaneledHouses.jpeg" 
     alt="houses with solar panelled roofs">
-    
-    
-    
 
     <main>
 
         <h2 
     class="reviews">
-    We've featured in
+    We've Featured In
     
     <br>
-    
+
     <img class="reviewsimage" src="assets/images/asSeenIn.png">
     
     </h2>
 
-        <h2>
+        <h2 class="quotestitle">
             
-            Our Award Winning Solar Panels can save you £££'s
+            Our Award Winning Solar Panels Can Save You £££'s
         
         </h2>
 
@@ -82,32 +91,62 @@
             
             <fieldset class="quoteinput">
                 
-                <legend>Get Your Quote</legend>
+                <legend>
+                    Get Your Quote
+                </legend>
                
-                <label for="name">Name</label>
-                <input type="text" id="name" required aria-required="true">
+                <label for="fname">
+                    Name
+                </label>
+                
+                <input type="text" id="fname" required aria-required="true">
 
-                <label for="email">Email</label>
+                <label for="email">
+                    Email
+                </label>
+                
                 <input type="email" id="email" required aria-required="true">
 
-                <label for="postcode">Postcode</label>
+                <label for="postcode">
+                    Postcode
+                </label>
+                
                 <input type="text" id="postcode">
 
-                <label for="phone">Contact Number</label>
+                <label for="phone">
+                    Contact Number
+                </label>
+                
                 <input type="number" id="phone">
      
-                <label for="mailing">Please indicate if you would like to join our mailing list</label>
+                <label for="mailing">
+                    Please indicate if you would like to join our mailing list
+
+                </label>
+                
                 <select id="mailing">
-                    <option value="please select one"> (select one) </option>
-                    <option value="yes">Yes, please sign me up</option>
-                    <option value="no">No, I would not like to receive future offers or marketing</option>
+                    
+                    <option value="please select one">
+                         (select one) 
+                        
+                    </option>
+
+                    <option value="yes">
+                        Yes, please sign me up</option>
+
+                    <option value="no">
+                        No, I would not like to receive future offers or marketing
+                    </option>
+
                 </select>
                 
                 <br>
 
                 <div class="btn-submit">
                     
-                    <button type="submit">Submit</button>
+                    <button type="submit">
+                        Submit
+                    </button>
                 
                 </div>
 
@@ -116,7 +155,7 @@
     </main>
     <section>
 
-        <h3>Come and visit Us</h3>
+        <h3>Visit Us</h3>
 
 
         <img class="offices" src="assets/images/offices.jpg" alt="outside of solar bright building">
@@ -125,21 +164,51 @@
     </section>
     
     <footer>
+        <address class="address contact-info">
+
+            <a href="tel:" class="phone-number">
+                &#9742 07578919977
+            </a>
+            
+            <br>
+            
+            <a href="mailto:" class="email-address">
+                &#128231 info@loremipsum.com
+            </a>
+
+            <br>
         
-        
-        <address class="address">
             Solar Bright<br />
             276 Bramley Ave<br />
             Leeds, West Yorkshire<br />
             UK
         
         </address>
-        
-        
-        </footer>
-        <script src="assets/js/nav.js">
 
-        </script>
+        <ul class="social-media">
+            <li>
+                <a href="https://www.facebook.com/" class="fa fa-facebook">
+                    <img src="assets/images/f_logo_RGB-Blue_58.png">
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"> 
+                      <img src="assets/images/Instagram_Glyph_Gradient.png">
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="https://www.twitter.com/" class="fa fa-twitter">
+                    <img src="assets/images/Twitter social icons - rounded square - blue.svg">
+                </a>
+            </li>
+        </ul> 
+
+        </footer>
+        <script
+        defer src="assets/js/index.js"></script>
+
 
     </body>
 </html>
